@@ -18,7 +18,10 @@ h2{font-size:22px;margin:0 0 6px;display:flex;align-items:center;gap:10px}h2 .n{
 .thumb .row.hit b{border:2.5px solid var(--r);border-radius:50%;padding:1px 6px;color:var(--r)}
 .thumb .tag{position:absolute;right:6%;top:12%;background:var(--v);font-weight:800;padding:4px 10px;border-radius:6px;font-size:13px;transform:rotate(-2deg)}
 .thumb .big{position:absolute;right:5%;bottom:12%;width:46%;text-align:right;font-weight:900;font-size:clamp(18px,3.1vw,30px);line-height:1.15;text-shadow:0 3px 8px rgba(0,0,0,.6)}
-.thumb .big em{font-style:normal;color:var(--y)}.thumb .cap{position:absolute;left:10px;bottom:8px;font-size:10px;opacity:.55}
+.thumb .big em{font-style:normal;color:var(--y)}.thumb .face{position:absolute;right:0;bottom:0;width:34%;height:88%;background:linear-gradient(180deg,#6b5a8f,#3a2f5c);border-radius:46% 46% 0 0/36% 36% 0 0;display:grid;place-items:center;font-size:11px;color:rgba(255,255,255,.7);text-align:center}
+.thumb .big2{position:absolute;left:54%;top:8%;transform:translateX(-50%);text-align:center;font-weight:900;line-height:1.05;z-index:2}.thumb .big2 span{display:block;font-size:clamp(16px,2.8vw,28px)}.thumb .big2 .w{color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.6)}.thumb .big2 .rbox{background:#E52929;color:#fff;padding:2px 10px;margin-top:4px}
+.thumb .tag{left:4%;right:auto;top:5%;z-index:3}
+.thumb .cap{position:absolute;left:10px;bottom:8px;font-size:10px;opacity:.55}
 .kv{display:grid;grid-template-columns:96px 1fr;gap:10px 14px;font-size:15px}.kv dt{color:var(--mut);font-weight:700}.kv dd{margin:0;font-weight:700}
 .why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.why div{background:var(--v2);border-radius:14px;padding:14px;font-size:14px}.why b{display:block;color:var(--v);font-size:20px}
 .alts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.alt{border:1px solid var(--line);border-radius:16px;padding:18px}.alt small{color:var(--v);font-weight:800}.alt h3{margin:6px 0 4px;font-size:17px}.alt p{margin:0;color:var(--mut);font-size:14px}
@@ -43,10 +46,19 @@ footer{color:var(--mut);font-size:13px;text-align:center;margin-top:30px}
 <section class="card"><h2><span class="n">추천</span>최종 추천 조합</h2><p class="sub">제목은 차분한 단정형, 썸네일은 한 단계 더 세게 — 잘 되는 채널들이 공통으로 쓰는 방식</p>
 <div class="pick"><div class="thumb"><div class="paper"><div style="font-size:10px;color:#888">수학 영역</div>
 <div class="row"><b>9.</b><i></i></div><div class="row hit"><b>10.</b><i></i></div><div class="row hit"><b>11.</b><i></i></div><div class="row"><b>12.</b><i></i></div></div>
-<div class="tag">D-21 수학</div><div class="big">진짜 범인은<br><em>10·11번</em></div><div class="cap">썸네일 구성 예시</div></div>
-<dl class="kv"><dt>제목</dt><dd>실모 점수가 안 오르는 건 킬러 때문이 아닙니다.</dd><dt>썸네일</dt><dd>작은 태그 "D-21 수학" + 큰 글씨 "진짜 범인은 10·11번" + 시험지 10·11번 빨간 동그라미</dd><dt>시그니처</dt><dd>100분 타임라인 바 (영상 속 그래픽과 연결)</dd></dl></div>
+<svg viewBox="0 0 160 90" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">
+<path d="M14 36 C 12 26, 50 24, 66 30 C 78 36, 74 60, 50 62 C 26 64, 10 56, 12 44 C 13 39, 20 34, 30 33" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M104 30 C 96 24, 86 26, 74 36" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M78 31 L 73 37 L 81 37" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div class="face">재민 얼굴<br>누끼</div>
+<div class="big2"><span class="w">진짜 범인</span><span class="rbox">여기 있다</span></div>
+<div class="tag">D-21 수학</div><div class="cap">썸네일 구성 예시 · 레퍼런스: MrBeast 리텐션 썸네일 구도</div></div>
+<dl class="kv"><dt>제목</dt><dd>실모 점수가 안 오르는 건 킬러 때문이 아닙니다.</dd><dt>썸네일</dt><dd>시험지 10·11번에 손으로 그린 흰 동그라미 + 화살표 → "진짜 범인 / <span style="background:#E52929;color:#fff;padding:0 6px">여기 있다</span>" + 오른쪽 재민 얼굴 누끼 + 작은 태그 "D-21 수학"</dd><dt>시그니처</dt><dd>100분 타임라인 바 (영상 속 그래픽과 연결)</dd></dl></div>
 <div class="why"><div><b>역설</b>"킬러가 아니라 맞힌 쉬운 문제" — 바로 꽂힘</div><div><b>공감</b>실제 댓글 "11번부터 막혀서 에?"와 그대로 겹침</div><div><b>선점</b>이동준·황용일·김한솔 누구도 안 쓰는 문장</div><div><b>정직</b>숫자·장면이 영상 멘트와 1:1로 일치</div></div></section>
 
+<section class="card"><h2><span class="n">추가</span>구도 레퍼런스: MrBeast 리텐션 썸네일</h2><p class="sub">Aprilynne Alter · "How MrBeast Solved YouTube" (45만) — 그래프의 한 지점에 손그림 동그라미 + 화살표 + "집중해 / 여기에"(빨간 박스) + 오른쪽 얼굴</p>
+<div class="two"><div><h3 style="margin-top:0">가져올 것</h3><ul><li><b>손그림 흰 동그라미 + 굽은 화살표</b>로 "여기"를 콕 찍는 구도</li><li>흰 글씨 한 줄 + <b>빨간 박스</b> 한 줄의 2단 문구</li><li>왼쪽 자료 / 오른쪽 인물 얼굴(누끼) 분할</li></ul></div>
+<div><h3 style="margin-top:0">재민네 버전</h3><ul><li>그래프 자리 → <b>실모 시험지</b>, 동그라미 위치 → <b>10·11번</b></li><li>문구 → "진짜 범인 / 여기 있다" (또는 "진짜 범인은 / 10·11번")</li><li>얼굴 → 재민 놀란·단호한 표정 누끼, 작은 태그 "D-21 수학"</li></ul></div></div></section>
 <section class="card"><h2><span class="n">대안</span>다른 후보</h2><p class="sub">반응 보고 A/B로 돌리거나 다음 쇼츠·커뮤니티 문구로 활용</p>
 <div class="alts"><div class="alt"><small>2순위 · 시간 포맷 선점</small><h3>D-21, 수학 시험 시간 10분 만드는 법</h3><p>썸네일: "수학 검토 10분 만드는 법" / 태그: 킬러 말고 진짜 범인</p></div>
 <div class="alt"><small>3순위 · 숫자 훅</small><h3>맞힌 문제에서 4~8점 새고 있습니다.</h3><p>썸네일: "맞힌 문제가 8점 깎는다" (제목은 4~8점으로 정확하게)</p></div>
