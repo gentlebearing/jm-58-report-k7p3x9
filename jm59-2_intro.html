@@ -1,0 +1,187 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>59-2 인트로 하이라이트 전진 배치 근거 · 재민네 수학</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+@font-face{font-family:Paperlogy;src:url(https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2) format('woff2');font-weight:800}
+@font-face{font-family:Paperlogy;src:url(https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2) format('woff2');font-weight:900}
+@font-face{font-family:Paperlogy;src:url(https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2) format('woff2');font-weight:600}
+:root{--bg:#f8f4ea;--fg:#1c1c21;--fg2:#5f5f6b;--line:#e6dfcf;--card:#fffdf8;--vio:#7b5cff;--lav:#c9b8ff;--tint:#f1edff;--ye:#fec50e;--rd:#e62929;--good:#1f8a5a;--mute:#c9c4b8;--th:#f2ecdf;--rule:#dfe3ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#15151b;--fg:#ecebe6;--fg2:#a9a8b3;--line:#2b2b36;--card:#1d1d25;--vio:#9b84ff;--lav:#5b4aa8;--tint:#24203a;--th:#24242e;--mute:#4a4a56;--rule:#2b2b36}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16.5px/1.75 Pretendard,-apple-system,sans-serif;word-break:keep-all}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.disp{font-family:Paperlogy,Pretendard,sans-serif}
+.hero{background:#1c1c21;color:#f8f4ea;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(123,92,255,.45),transparent 70%)}
+.eyebrow{display:inline-block;background:#7b5cff;color:#fff;font:800 13px/1 Paperlogy,Pretendard;padding:9px 14px;border-radius:6px;transform:rotate(-3deg);letter-spacing:.02em}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.3;margin:22px 0 14px;font-weight:900}
+.hero h1 em{font-style:normal;color:#fec50e;display:block}
+.meta{color:#b9b6c4;font-size:14px}
+h2{font-size:25px;font-weight:800;margin:56px 0 18px;padding-top:18px;border-top:2px solid var(--fg)}
+h2 .n{display:inline-block;background:var(--vio);color:#fff;border-radius:50%;width:32px;height:32px;text-align:center;line-height:32px;font-size:16px;margin-right:10px;vertical-align:3px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px;margin:26px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px 22px;position:relative;overflow:hidden}
+.kpi:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.kpi.up{--c:var(--vio)}.kpi.down{--c:var(--rd)}.kpi.maybe{--c:var(--ye)}
+.kpi .k{font-size:13.5px;color:var(--fg2);font-weight:700}
+.kpi .new{font:900 30px/1.2 Paperlogy,Pretendard;margin:6px 0 4px}
+.kpi .kb{display:inline-block;font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--c) 16%,transparent);color:var(--c);margin-bottom:6px}
+.kpi.maybe .kb{color:#9a7600}
+.kpi p{margin:4px 0 0;font-size:14px;color:var(--fg2);line-height:1.55}
+.oneline{background:var(--ye);color:#1c1c21;border-radius:18px;padding:22px 24px;font:800 clamp(19px,3vw,24px)/1.5 Paperlogy,Pretendard;margin:22px 0}
+.lead{font-size:18px;font-weight:600}
+mark{background:linear-gradient(transparent 58%,rgba(254,197,14,.55) 58%);color:inherit;padding:0 2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+figure.chart{margin:20px 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 18px 10px}
+figure.chart .ct{font:800 18px/1.45 Paperlogy,Pretendard;margin:0 4px 2px}
+figure.chart .cs{font-size:13.5px;color:var(--fg2);margin:0 4px 6px}
+svg{width:100%;height:auto;display:block}
+svg .lab{font:500 13px Pretendard;fill:var(--fg)}svg .lab .ch{font-weight:800}
+svg .mutet{fill:var(--fg2)}
+svg .bar{fill:var(--vio)}svg .bar.mute{fill:var(--mute)}
+svg .val{font:900 15px Paperlogy,Pretendard;fill:var(--fg)}svg .val.bad{fill:var(--rd)}
+svg .ref{stroke:var(--fg2);stroke-dasharray:4 4;stroke-width:1.2}svg .ax{font:600 12px Pretendard;fill:var(--fg2)}
+figcaption{font-size:12.5px;color:var(--fg2);text-align:center;padding:8px 0 4px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);margin:18px 0}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--th);font-weight:800;font-size:13.5px}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700}
+td.big{font:900 19px Paperlogy,Pretendard}
+tr.hl td{background:var(--tint)}
+.pill{display:inline-block;background:var(--vio);color:#fff;font-size:12px;font-weight:800;border-radius:99px;padding:2px 10px;margin-left:6px;vertical-align:2px}
+ul,ol{padding-left:22px}li{margin:6px 0}li::marker{color:var(--vio);font-weight:800}
+.steps{list-style:none;padding:0;margin:22px 0;position:relative}
+.steps:before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:2px;background:var(--line)}
+.steps li{position:relative;padding:0 0 18px 60px;margin:0}
+.steps .no{position:absolute;left:4px;top:0;width:36px;height:36px;border-radius:50%;background:var(--card);border:2px solid var(--fg);font:900 15px/32px Paperlogy;text-align:center}
+.steps li.hot .no{background:var(--vio);border-color:var(--vio);color:#fff}
+.steps .t{font:800 17px/1.5 Paperlogy,Pretendard}
+.steps .tc{font-size:12.5px;font-weight:700;color:var(--fg2);background:var(--th);border-radius:6px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+.steps .q{display:block;color:var(--fg2);font-size:15px;margin-top:2px}
+.steps li.hot .box{background:var(--tint);border:1.5px solid var(--lav);border-radius:14px;padding:12px 14px;margin-top:8px}
+.steps li.hot .box b{color:var(--vio)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--fg);color:var(--bg);border-radius:99px;padding:6px 14px;font:800 14px Paperlogy,Pretendard}
+.chip.y{background:var(--ye);color:#1c1c21}
+.thumb{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px;align-items:stretch;margin:18px 0}
+@media (max-width:720px){.thumb{grid-template-columns:minmax(0,1fr)}}
+.mock{aspect-ratio:16/9;border-radius:14px;background:linear-gradient(135deg,#2a6b55,#1d4a3c);position:relative;overflow:hidden;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.mock .p{position:absolute;top:10%;width:30%;height:44%;background:#fff;border-radius:6px;opacity:.95}
+.mock .p.a{left:5%}.mock .p.b{left:37%}
+.mock .p i{position:absolute;left:12%;top:16%;right:12%;height:6%;background:#d9d9d9;border-radius:3px;box-shadow:0 14px 0 #d9d9d9,0 28px 0 #d9d9d9,0 42px 0 #d9d9d9}
+.mock .p .circ{position:absolute;left:30%;top:10%;width:44%;height:22%;border:3px solid var(--rd);border-radius:50%}
+.mock .p .lb{position:absolute;bottom:-1px;left:0;right:0;background:#7b5cff;font:800 10px/1.9 Paperlogy;text-align:center;border-radius:0 0 6px 6px}
+.mock .face{position:absolute;right:4%;bottom:6%;width:26%;height:80%;border:2px dashed rgba(255,255,255,.55);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;font:800 11px/1.4 Paperlogy,Pretendard;color:rgba(255,255,255,.85)}
+.mock .big{position:absolute;left:5%;bottom:7%;right:32%;font:900 clamp(15px,3.1vw,26px)/1.15 Paperlogy;text-shadow:0 3px 0 #000,0 0 10px rgba(0,0,0,.6)}
+.mock .big em{font-style:normal;color:var(--ye)}
+.titles{display:flex;flex-direction:column;gap:10px}
+.tt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:700;line-height:1.5}
+.tt small{display:block;color:var(--fg2);font-weight:600;font-size:12.5px}
+.tt.no{border-style:dashed;color:var(--fg2)}.tt.no s{color:var(--rd)}
+.note{font-size:14px;color:var(--fg2)}
+.src{font-size:13.5px;color:var(--fg2);border-top:1px solid var(--line);margin-top:56px;padding:18px 0 60px}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<span class="eyebrow">재민네 수학 · 59-2 패키징</span>
+<h1>6·9모 다시 풀기 편,<em>첫 15초에 결과부터 보여줍니다</em></h1>
+<div class="meta">2026년 10월 31일 · 수학 입시 채널 20곳 롱폼 391편 비교 + 재민네 스튜디오 데이터 + 최종 편집본(15:39) 전사</div>
+</div></header>
+<main class="wrap">
+
+<h2>한눈에 보기</h2>
+<p class="lead">촬영본 내용은 그대로 두고, 이미 있는 장면의 <mark>순서만</mark> 바꿉니다. 썸네일이 약속한 "3분 컷"을 영상 첫 15초 안에 실제로 보여주는 구조예요.</p>
+<div class="kpis">
+<div class="kpi up"><div class="k">'결과 약속' 제목 (수능 3주 전)</div><div class="new">평소의 2~8배</div><span class="kb">먹힘</span><p>"수능에 나온다", "3주 만에", "푼 문제부터"</p></div>
+<div class="kpi down"><div class="k">'기출 분석법' 제목 (이번 달)</div><div class="new">평소의 0.1배</div><span class="kb">피해야 함</span><p>같은 주제라도 '분석'으로 포장하면 묻힘</p></div>
+<div class="kpi up"><div class="k">재민네 '결과 먼저' 인트로</div><div class="new">0:30 지속 59%</div><span class="kb">채널 최고 수준</span><p>실측 인트로 3개 모두 57~60% 구간</p></div>
+<div class="kpi maybe"><div class="k">재민네 9월 노출 · 클릭률</div><div class="new">−38% · 6.3%</div><span class="kb">노출이 문제</span><p>클릭은 오르는데 노출이 줄어드는 중</p></div>
+</div>
+<div class="oneline">"원리를 발견하면 → 3분 컷 → 10초도 안 걸린다"<br>이 5초를 맨 앞으로 당깁니다.</div>
+
+<h2><span class="n">1</span>지금 시기에 먹힌 건 '결과 약속'이었습니다</h2>
+<figure class="chart"><p class="ct">결과를 약속한 제목은 평소의 2~8배, '기출 분석법'은 0.1배</p><p class="cs">수능 전 같은 시기 수학 입시 영상 · 각 채널 평소 조회수 대비 배수</p>
+<svg viewBox="0 0 720 348" role="img" aria-label="결과를 약속한 제목은 평소의 2~8배, 기출 분석법은 0.1배">
+<line x1="341.25" x2="341.25" y1="26" y2="338" class="ref"/><text x="346.25" y="22" class="ax">평소 1배</text>
+<text x="288" y="62.0" text-anchor="end" class="lab"><tspan class="ch">히든카이스</tspan> · 3주만에 끌어올리는 훈련법</text>
+<rect x="300" y="40" width="330.0" height="34" rx="6" class="bar"><title>히든카이스 · 3주만에 끌어올리는 훈련법: 평소의 8.0배</title></rect>
+<text x="638.0" y="63.0" class="val">8배</text>
+<text x="288" y="110.0" text-anchor="end" class="lab"><tspan class="ch">성적PT</tspan> · 새 문제집보다 푼 문제부터</text>
+<rect x="300" y="88" width="309.4" height="34" rx="6" class="bar"><title>성적PT · 새 문제집보다 푼 문제부터: 평소의 7.5배</title></rect>
+<text x="617.4" y="111.0" class="val">7.5배</text>
+<text x="288" y="158.0" text-anchor="end" class="lab"><tspan class="ch">재민네</tspan> · 수능에 반드시 나옵니다</text>
+<rect x="300" y="136" width="177.4" height="34" rx="6" class="bar"><title>재민네 · 수능에 반드시 나옵니다: 평소의 4.3배</title></rect>
+<text x="485.4" y="159.0" class="val">4.3배</text>
+<text x="288" y="206.0" text-anchor="end" class="lab"><tspan class="ch">강새로이</tspan> · 평가원 기출 회귀</text>
+<rect x="300" y="184" width="148.5" height="34" rx="6" class="bar"><title>강새로이 · 평가원 기출 회귀: 평소의 3.6배</title></rect>
+<text x="456.5" y="207.0" class="val">3.6배</text>
+<text x="288" y="254.0" text-anchor="end" class="lab"><tspan class="ch">재민네</tspan> · 나올 가능성 높습니다</text>
+<rect x="300" y="232" width="82.5" height="34" rx="6" class="bar"><title>재민네 · 나올 가능성 높습니다: 평소의 2.0배</title></rect>
+<text x="390.5" y="255.0" class="val">2배</text>
+<text x="288" y="302.0" text-anchor="end" class="lab mutet"><tspan class="ch">서하쌤</tspan> · 현실적인 기출 분석법</text>
+<rect x="300" y="280" width="4.1" height="34" rx="6" class="bar mute"><title>서하쌤 · 현실적인 기출 분석법: 평소의 0.1배</title></rect>
+<text x="312.1" y="303.0" class="val bad">0.1배</text>
+</svg>
+<figcaption>수학 입시 채널 20곳 · 수능 전 같은 시기 롱폼 391편(2024~2026) · 서하쌤은 3편 0.08~0.15배의 중간값</figcaption></figure>
+<p>같은 평가원·기출 주제라도 "평가원은 또 낸다"처럼 <b>결과를 약속하면 3.6배</b>, "분석법"으로 포장하면 <b>0.1배</b>였어요. 주제가 아니라 포장 차이입니다. 2편은 "6·9모 14번이 둘 다 자연수 조건"이라는 근거가 영상 안에 있어서, 이 포장을 써도 낚시가 아니에요.</p>
+<p class="note">길이도 맞습니다. 올해 이 시기에는 12~20분 영상이 평소의 2.2배로 가장 좋았고, 2편 최종본은 15분 39초예요.</p>
+
+<h2><span class="n">2</span>쌤 채널에서 제일 잘 붙잡은 인트로는 '결과 먼저'였습니다</h2>
+<p>지속률을 실제로 잰 재민네 인트로 3개는 모두 57~60%로 높았고, 아래 두 가지 유형 중 하나였어요.</p>
+<div class="tw"><table><thead><tr><th>영상</th><th>인트로 유형</th><th>0:30 지속률</th></tr></thead><tbody>
+<tr><td>무제 (6모·7모)</td><td>아픈 현실 지적</td><td class="big">60%</td></tr>
+<tr class="hl"><td>시행착오 (4등급 → 6모 92점)</td><td>결과를 먼저 보여줌 <span class="pill">2편과 같은 유형</span></td><td class="big">59%</td></tr>
+<tr><td>최소2찍</td><td>아픈 현실 지적</td><td class="big">57%</td></tr>
+</tbody></table></div>
+<ul>
+<li><b>2편은 문풀 강의라 '결과 먼저' 유형이 맞아요.</b> 2편의 결과는 "택도 없는데요? → 5로 바뀌면 되지!! → 3분 컷"입니다.</li>
+<li><b>9등급썰도 같은 패턴이었어요.</b> 수능장 장면 같은 사건 구간에서는 이탈이 멈추고, 교훈을 설명하는 구간에서 빠졌습니다.</li>
+<li><b>지금 2편 인트로는 질문과 설명으로 채워져 있고</b>, 문항이 나오는 건 1분 6초부터예요. 그래서 결과 장면을 앞으로 당겨야 해요.</li>
+</ul>
+
+<h2><span class="n">3</span>클릭은 되는데 노출이 줄어서, 첫 30초가 제일 중요합니다</h2>
+<p>쌤 채널 문제는 클릭률이 아니라 노출이에요. 작년 9월과 같은 8편을 올렸는데 썸네일 노출은 225.9만에서 138.9만으로 <b>38% 줄었고</b>, 클릭률은 4.9%에서 6.3%로 <b>올랐어요</b>.</p>
+<ul>
+<li>유튜브는 클릭한 사람이 얼마나 오래 보는지를 보고 노출을 더 늘릴지 정합니다. 클릭률이 좋아도 초반에 빠지면 추천이 안 넓어져요.</li>
+<li>썸네일에 "3분 컷"을 약속했으면, 클릭한 학생은 그걸 바로 확인하고 싶어해요. <mark>썸네일과 같은 말이 15초 안에 나오면</mark> "제대로 들어왔다"는 확신이 생겨서 남아요.</li>
+<li>지금처럼 질문·설명이 1분 넘게 이어지면, 썸네일에서 본 걸 찾는 학생이 그 사이에 나갈 가능성이 커요. <span class="note">(원리상 판단이고, 업로드 후 지속률로 확인합니다)</span></li>
+</ul>
+
+<h2><span class="n">4</span>인트로 구성안 (문항 등장 전까지 약 50초)</h2>
+<p>새로 찍을 건 없습니다. 괄호 안은 최종 편집본 기준 위치예요.</p>
+<ol class="steps">
+<li><span class="no">1</span><span class="t">오프닝 (그대로)<span class="tc">0:00~0:05</span></span><span class="q">"14번에 출제했던 모든 문제가 이 자연수 표현으로" + 6모·9모 문항 카드 2장</span></li>
+<li class="hot"><span class="no">2</span><span class="t">연결 대사 + 하이라이트<span class="tc">약 5초</span></span>
+<div class="box"><div class="chips"><span class="chip">원리를 발견하면</span><span class="chip y">3분 컷 가능</span><span class="chip y">10초도 안걸립니다</span></div>
+<span class="q" style="margin-top:8px">"원리를 발견하면" (10:45) → <b>"3분 컷 가능"</b> (6:58, 두둥) → <b>"10초도 안걸립니다"</b> (10:13)<br>대안 연결: "뭘 발견할 수 있다? 원리를 발견할 수 있다" (6:55~6:58), 바로 뒤가 "3분 컷"이라 한 호흡으로 이어짐</span></div></li>
+<li><span class="no">3</span><span class="t">다리<span class="tc">0:05~0:09</span></span><span class="q">"대부분의 수능 시험지에서는 이런 표현들이 되게 많이 나온다"</span></li>
+<li><span class="no">4</span><span class="t">질문 훅 (압축)<span class="tc">0:15~0:31</span></span><span class="q">"이걸 다시 또 푸는 게 정말 공부가 될까요?" → "실력이 늘어서 푸는 건지, 답을 외운 건지" · 쌤들 얘기(0:17~0:27)는 빼도 됨</span></li>
+<li><span class="no">5</span><span class="t">통념 부정<span class="tc">0:35~0:41</span></span><span class="q">"몇 번 풀었느냐가 아니라 → 무엇을 확인하고 얻어갈 수 있느냐!"</span></li>
+<li><span class="no">6</span><span class="t">오늘 할 것<span class="tc">0:41~0:56</span></span><span class="q">노트패드 + "이 원리를 그대로 적용하면 됩니다"</span></li>
+<li><span class="no">7</span><span class="t">선물 예고<span class="tc">0:56~1:05</span></span><span class="q">"오늘 다룬 문항 자세한 해설, 무료로 드릴게요"</span></li>
+</ol>
+<p class="note">하이라이트는 <b>15초를 넘기지 않는 게 핵심</b>이에요. 더 넣으면 "언제 본론이야" 하고 나갑니다.</p>
+
+<h2><span class="n">5</span>썸네일·제목</h2>
+<p>썸네일과 인트로가 <b>같은 말</b>을 하게 맞춥니다.</p>
+<div class="thumb">
+<div class="mock" aria-label="썸네일 구도 예시"><div class="p a"><i></i><div class="circ"></div><div class="lb">6모 14번</div></div><div class="p b"><i></i><div class="circ"></div><div class="lb">9모 14번</div></div><div class="face">재민T<br>놀란 표정</div><div class="big">수능 14번,<br><em>이거 나오면 3분 컷</em></div></div>
+<div class="titles">
+<div class="tt">6·9모 14번, 둘 다 '이 조건'이었습니다. 수능도 똑같이 나옵니다<small>추천 1 · 증거(두 문항) + 결과 약속</small></div>
+<div class="tt">수능 D-19, 6·9모 14번 이렇게 다시 풀면 수능에 그대로 나옵니다<small>추천 2 · 시기 키워드 + 결과 약속</small></div>
+<div class="tt no"><s>기출 분석법</s> · <s>분석</s><small>이번 달 다른 채널에서 평소의 0.1배</small></div>
+</div></div>
+<p class="note">썸네일 구도: 6모 14번 | 9모 14번 나란히, "자연수"에 빨간 동그라미, 재민T 놀란 표정 한 컷. 위 그림은 배치 예시예요.</p>
+
+<h2><span class="n">6</span>리스크와 현실적인 기대치</h2>
+<p><b>대박보다는 회생을 목표로 봅니다.</b> 칠판 문풀 구성이라 포장만으로 터지긴 어렵고, 예상은 채널 평소(약 1만)의 1~1.5배예요. 직전 편(0.6만)보다는 확실히 낫게 만드는 게 목표입니다.</p>
+<ul>
+<li><b>같은 장면이 두 번 나오는 건 괜찮아요.</b> 앞에서 본 "3분 컷"을 본문에서 다시 보면 "아까 그거다"라는 확인이 돼요.</li>
+<li><b>하이라이트를 늘리면 역효과예요.</b> 15초가 넘어가면 이탈합니다.</li>
+<li><b>판단은 업로드 후 데이터로 합니다.</b> 0:30 지속률이 57% 이상이면 인트로는 성공이에요. 유튜브 테스트는 며칠에서 2주가 걸려서, 하루 숫자로 제목을 바꾸지는 않아요.</li>
+</ul>
+
+<div class="src"><b>출처</b> · 수학 입시 채널 20곳의 수능 전 같은 시기 롱폼 391편(2024~2026) 조회수 비교 · 재민네 유튜브 스튜디오(노출·클릭률·지속률) · 59-2 최종 편집본 전사. "평소 대비 배수"는 각 채널 최근 영상 조회수 중앙값 기준입니다.</div>
+</main></body></html>
