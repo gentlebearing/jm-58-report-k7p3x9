@@ -39,6 +39,10 @@ svg .mutet{fill:var(--fg2)}
 svg .bar{fill:var(--vio)}svg .bar.mute{fill:var(--mute)}
 svg .val{font:700 15px Pretendard;fill:var(--fg)}svg .val.bad{fill:var(--rd)}
 svg .ref{stroke:var(--fg2);stroke-dasharray:4 4;stroke-width:1.2}svg .ax{font:600 12px Pretendard;fill:var(--fg2)}
+h3.sub{font-size:19px;font-weight:700;margin:34px 0 10px}
+b.neg{color:var(--rd)}
+td[rowspan]{vertical-align:top;background:var(--th);font-size:14px}
+table.grp td{font-weight:400}table.grp td[rowspan],table.grp td.big{font-weight:700}
 figcaption{font-size:12.5px;color:var(--fg2);text-align:center;padding:8px 0 4px}
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);margin:18px 0}
 table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
@@ -90,16 +94,17 @@ ul,ol{padding-left:22px}li{margin:6px 0}li::marker{color:var(--vio);font-weight:
 <main class="wrap">
 
 <h2>요약</h2>
-<p class="lead">"원리를 발견하면 → 3분 컷 → 10초도 안 걸린다" 5초를 인트로 맨 앞에 넣었습니다. 촬영본에 있던 장면이고, 새로 만든 건 없습니다. 이유는 데이터 세 개입니다.</p>
+<p class="lead">"원리를 발견하면 → 3분 컷 → 10초도 안 걸린다" 5초를 인트로 맨 앞에 넣었습니다. 촬영본에 있던 장면이고, 새로 만든 건 없습니다. 이유는 데이터 두 개입니다.</p>
 <div class="kpis">
 <div class="kpi up"><div class="k">수능 3주 전, '결과 약속' 제목</div><div class="new">평소의 2~8배</div><span class="kb">사실</span><p>"수능에 나온다", "3주 만에", "푼 문제부터"</p></div>
 <div class="kpi down"><div class="k">같은 시기, '기출 분석법' 제목</div><div class="new">평소의 0.1배</div><span class="kb">사실</span><p>주제가 같아도 포장이 다르면 이렇게 됩니다</p></div>
 <div class="kpi up"><div class="k">재민네 '결과 먼저' 인트로</div><div class="new">0:30 지속 59%</div><span class="kb">사실</span><p>재민네가 실측한 인트로 중 최고 구간(57~60%)</p></div>
-<div class="kpi maybe"><div class="k">재민네 9월 노출 / 클릭률</div><div class="new">−38% / 6.3%</div><span class="kb">사실</span><p>클릭은 올랐고, 노출은 줄었습니다</p></div>
+<div class="kpi up"><div class="k">재민네 이 시기 최고 기록</div><div class="new">4.3만 · 4.3배</div><span class="kb">사실</span><p>「수능에 반드시 나옵니다」 (2024.10)</p></div>
 </div>
 <div class="oneline">시청자는 썸네일에서 본 걸 확인하려고 들어옵니다.<br>그래서 <mark>썸네일에 쓸 말을 15초 안에</mark> 보여줍니다.</div>
 
 <h2><span class="n">1</span>이 시기에 조회수가 나온 제목은 전부 결과를 약속했습니다</h2>
+<p><b>조사 방법.</b> 수학 입시 채널 20곳(재민네 포함)이 수능 전 같은 시기(10월 1일~11월 14일)에 올린 롱폼 391편을 모았습니다. 2024년 74편, 2025년 171편, 2026년 146편입니다. 채널마다 체급이 달라서 조회수를 그대로 비교하지 않고, <b>그 채널 평소 조회수(중앙값)의 몇 배가 나왔는지</b>로 비교했습니다.</p>
 <figure class="chart"><p class="ct">결과를 약속한 제목은 평소의 2~8배, '기출 분석법'은 0.1배</p><p class="cs">수능 전 같은 시기 수학 입시 영상 · 각 채널 평소 조회수 대비 배수</p>
 <svg viewBox="0 0 720 348" role="img" aria-label="결과를 약속한 제목은 평소의 2~8배, 기출 분석법은 0.1배">
 <line x1="341.25" x2="341.25" y1="26" y2="338" class="ref"/><text x="346.25" y="22" class="ax">평소 1배</text>
@@ -123,8 +128,47 @@ ul,ol{padding-left:22px}li{margin:6px 0}li::marker{color:var(--vio);font-weight:
 <text x="312.1" y="303.0" class="val bad">0.1배</text>
 </svg>
 <figcaption>수학 입시 채널 20곳 · 수능 전 같은 시기 롱폼 391편(2024~2026) · 서하쌤은 3편 0.08~0.15배의 중간값</figcaption></figure>
-<p>재민네 채널에서 이 시기 최고 기록도 「수능에 반드시 나옵니다」(4.3배, 4.3만)입니다. "평가원 기출"이라는 같은 주제도 결과를 약속하면 3.6배, "분석법"이라고 붙이면 0.1배였습니다. <b>주제는 상관없고, 포장이 결과를 갈랐습니다.</b></p>
-<p>2편은 "6·9모 14번이 둘 다 자연수 조건"이라는 증거가 영상 안에 있습니다. 결과를 약속해도 과장이 아닙니다.</p>
+
+<h3 class="sub">잘 된 제목은 세 종류였습니다</h3>
+<div class="tw"><table class="grp"><thead><tr><th>포장</th><th>영상</th><th>평소 대비</th></tr></thead><tbody>
+<tr><td rowspan="3">수능에 나온다 / 예상</td><td>재민네 「이거 배워두면 절대 후회 안 할 겁니다. 수능에 반드시 나옵니다」 (2024.10)</td><td class="big">4.3배</td></tr>
+<tr><td>히든카이스 「수능 수학 21번 예상하기」 (2025.11)</td><td class="big">4.2배</td></tr>
+<tr><td>재민네 「이번 수능 수학에서 나올 가능성 높습니다」 (2024.10)</td><td class="big">2.0배</td></tr>
+<tr><td rowspan="2">남은 기간 / 푼 문제부터</td><td>히든카이스 「수능 수학 80점까지, 3주만에 끌어올리는 훈련법」 (2025.10)</td><td class="big">8.0배</td></tr>
+<tr><td>성적PT 「수능 한 달 전 수학 3~4등급, 새 문제집보다 푼 문제부터」 (2026.10)</td><td class="big">7.5배</td></tr>
+<tr><td rowspan="3">시험 당일 / 찍기</td><td>서하쌤 「찐으로 통하는 찍기만 모아봤습니다」 (2025.11)</td><td class="big">13.7배</td></tr>
+<tr><td>이영수 「수능 전, 마지막 찍기 특강」 (2025.11)</td><td class="big">8.0배</td></tr>
+<tr><td>재민네 「수능 날, 이 중에 하나는 큰 도움 될 겁니다」 (2025.11)</td><td class="big">4.3배</td></tr>
+</tbody></table></div>
+<p>셋 다 <b>"이걸 보면 수능에서 뭐가 된다"</b>를 제목에서 약속합니다. 2편 주제와 가장 가까운 건 성적PT의 「새 문제집보다 푼 문제부터」(7.5배)입니다. 6·9모를 다시 푸는 2편과 거의 같은 주제예요.</p>
+
+<h3 class="sub">같은 주제라도 '분석법'이라고 붙이면 묻혔습니다</h3>
+<p>서하쌤이 이번 달 D-21에 낸 「현실적인 기출 분석법」 시리즈 3편은 <b class="neg">평소의 0.08~0.15배</b>였습니다. 같은 평가원·기출 주제도 강새로이 「평가원 기출 회귀」처럼 결과를 약속하면 3.6배였습니다. <b>주제는 같았고, 포장이 결과를 갈랐습니다.</b></p>
+
+<h3 class="sub">재민네도 이미 같은 결과를 냈습니다</h3>
+<div class="tw"><table><thead><tr><th>게시일</th><th>재민네 제목</th><th>조회수</th></tr></thead><tbody>
+<tr class="hl"><td>2024.10.16</td><td>이거 배워두면 절대 후회 안 할 겁니다. 수능에 반드시 나옵니다.</td><td class="big">4.3만</td></tr>
+<tr><td>2024.10.30</td><td>이번 수능 수학에서 나올 가능성 높습니다. 빠르게 풀어보세요</td><td class="big">2.0만</td></tr>
+<tr><td>2024.11.05</td><td>올해 마지막 문제입니다. 이거 풀고 수능 대박나세요</td><td class="big">1.5만</td></tr>
+<tr><td>2024.11.10</td><td>수능 수학, 장담컨데 이 방법으로 최고 점수 받을 겁니다</td><td class="big">2.6만</td></tr>
+<tr><td>2025.10.18</td><td>(특강 종료) 이 자료 받아가서 수능날 최소 60점 확보하세요</td><td class="big">0.9만</td></tr>
+<tr class="hl"><td>2025.11.11</td><td>(흔한 얘기X) 수능 날, 이 중에 하나는 큰 도움 될 겁니다</td><td class="big">4.3만</td></tr>
+<tr><td>2026.10.22</td><td>D-26? 그게 뭐? 절대 포기하지 마세요</td><td class="big">1.0만</td></tr>
+<tr><td>2026.10.27</td><td>58편 (100분 / 실모)</td><td class="big">0.6만</td></tr>
+</tbody></table></div>
+<p>2024년 10월 「수능에 반드시 나옵니다」는 <b>문제 하나 푸는 영상</b>이었는데 4.3만이 나왔습니다. 칠판 문풀이라서 안 되는 게 아니라, 포장이 공부법이면 안 되는 겁니다.</p>
+
+<h3 class="sub">영상 종류보다 제목 문구 차이가 더 큽니다</h3>
+<p>제목 키워드로 영상 종류를 나눠 평균을 내면 대부분 평소의 1~2배 사이입니다. 문항해설은 2024년 1.08배, 2025년 1.79배, 2026년 1.24배였습니다. 그런데 같은 문항해설 안에서도 "수능에 나온다"를 붙인 재민네 영상은 4.3배였습니다. <b>어떤 영상이냐보다, 제목이 무엇을 약속하느냐가 차이를 만듭니다.</b></p>
+
+<h3 class="sub">길이도 맞습니다</h3>
+<div class="tw"><table><thead><tr><th>올해(2026) 같은 시기</th><th>편수</th><th>평소 대비</th></tr></thead><tbody>
+<tr><td>12분 이하</td><td>116편</td><td class="big">1.09배</td></tr>
+<tr class="hl"><td>12~20분</td><td>16편</td><td class="big">2.20배</td></tr>
+<tr><td>20분 이상</td><td>14편</td><td class="big">1.14배</td></tr>
+</tbody></table></div>
+<p>2편 최종본은 15분 39초입니다.</p>
+<p class="note">한계: 올해 10월 영상은 아직 조회수가 쌓이는 중이라 실제보다 낮게 잡혀 있습니다. 영상 종류는 제목 키워드로 자동 분류해서 일부는 다른 칸에 들어갔을 수 있습니다.</p>
 
 <h2><span class="n">2</span>재민네에서 가장 오래 붙잡은 인트로는 결과부터 보여준 인트로였습니다</h2>
 <div class="tw"><table><thead><tr><th>영상</th><th>인트로 방식</th><th>0:30 지속률</th></tr></thead><tbody>
@@ -138,41 +182,5 @@ ul,ol{padding-left:22px}li{margin:6px 0}li::marker{color:var(--vio);font-weight:
 <li><b>원래 인트로는 질문과 설명이었고, 문항은 1분 6초에 처음 나왔습니다.</b> 결과는 7분이 지나야 나왔습니다.</li>
 </ul>
 
-<h2><span class="n">3</span>지금 재민네가 막힌 곳은 클릭이 아니라 클릭한 다음입니다</h2>
-<p>작년 9월과 똑같이 8편을 올렸습니다. 썸네일 노출은 225.9만에서 138.9만으로 <b>38% 줄었고</b>, 클릭률은 4.9%에서 6.3%로 <b>올랐습니다</b>. 썸네일은 이미 제 역할을 하고 있습니다.</p>
-<ul>
-<li>유튜브는 클릭한 사람이 얼마나 보고 나가는지를 보고 노출을 정합니다. 초반에 나가면 클릭률이 아무리 좋아도 추천이 넓어지지 않습니다.</li>
-<li>썸네일이 "3분 컷"을 약속하면 클릭한 학생은 그 장면을 찾습니다. 1분 넘게 질문과 설명만 나오면 그 사이에 나갑니다.</li>
-<li>그래서 썸네일에 쓸 말을 15초 안에 보여주도록 장면 순서를 바꿨습니다.</li>
-</ul>
-
-<h2><span class="n">4</span>넣은 것</h2>
-<p>새로 찍은 건 없습니다. 이미 있던 장면을 앞으로 가져왔습니다. 시간은 인트로를 추가하기 전 편집본 기준입니다.</p>
-<ol class="steps">
-<li><span class="no">1</span><span class="t">오프닝<span class="tc">0:00~0:05</span></span><span class="q">"14번에 출제했던 모든 문제가 이 자연수 표현으로" + 6모·9모 문항 카드 2장 (원래 있던 것)</span></li>
-<li class="hot"><span class="no">2</span><span class="t">추가한 5초</span>
-<div class="box"><div class="chips"><span class="chip">원리를 발견하면</span><span class="chip y">3분 컷 가능</span><span class="chip y">10초도 안걸립니다</span></div>
-<span class="q" style="margin-top:8px">"원리를 발견하면" (10:45) → "3분 컷 가능" (6:58) → "10초도 안걸립니다" (10:13)</span></div></li>
-<li><span class="no">3</span><span class="t">이후는 원래 순서 그대로</span><span class="q">수능 시험지 표현 → "다시 푸는 게 공부가 될까요?" → "몇 번 풀었느냐가 아니라" → 오늘 할 것 → 선물 예고</span></li>
-</ol>
-<p class="note">하이라이트를 5초로 끊은 것도 이유가 있습니다. 15초를 넘기면 "본론은 언제 나오냐"가 되기 때문입니다.</p>
-
-<h2><span class="n">5</span>썸네일·제목은 이 인트로와 같은 말을 해야 합니다</h2>
-<div class="thumb">
-<div class="mock" aria-label="썸네일 구도 예시"><div class="p a"><i></i><div class="circ"></div><div class="lb">6모 14번</div></div><div class="p b"><i></i><div class="circ"></div><div class="lb">9모 14번</div></div><div class="face">재민T<br>놀란 표정</div><div class="big">수능 14번,<br><em>이거 나오면 3분 컷</em></div></div>
-<div class="titles">
-<div class="tt">6·9모 14번, 둘 다 '이 조건'이었습니다. 수능도 똑같이 나옵니다<small>증거(두 문항) + 결과 약속</small></div>
-<div class="tt">수능 D-19, 6·9모 14번 이렇게 다시 풀면 수능에 그대로 나옵니다<small>시기 + 결과 약속</small></div>
-<div class="tt no"><s>기출 분석법</s> · <s>분석</s><small>이번 달 다른 채널에서 평소의 0.1배</small></div>
-</div></div>
-<p class="note">썸네일이 "3분 컷"이라고 하면 인트로 5초가 그 약속을 바로 증명합니다. 썸네일이 다른 말을 하면 이 5초는 의미가 없어집니다.</p>
-
-<h2><span class="n">6</span>확인은 숫자로 합니다</h2>
-<ul>
-<li><b>0:30 지속률이 57% 이상이면</b> 재민네 최고 인트로들과 같은 구간입니다.</li>
-<li>유튜브 테스트는 며칠에서 2주가 걸립니다. 하루치 숫자로는 판단하지 않습니다.</li>
-<li>칠판 문풀 영상이라 크게 터지는 걸 기대하지는 않습니다. 기준은 채널 평소(약 1만)의 1~1.5배, 최소한 직전 편(0.6만)보다 나은 것입니다.</li>
-</ul>
-
-<div class="src"><b>출처</b> · 수학 입시 채널 20곳의 수능 전 같은 시기 롱폼 391편(2024~2026) 조회수 비교 · 재민네 유튜브 스튜디오(노출·클릭률·지속률) · 59-2 편집본 전사. "평소 대비 배수"는 각 채널 최근 영상 조회수 중앙값 기준입니다.</div>
+<div class="src"><b>출처</b> · 수학 입시 채널 20곳의 수능 전 같은 시기 롱폼 391편(2024~2026) 조회수 비교 · 재민네 유튜브 스튜디오(지속률) · 59-2 편집본 전사. "평소 대비 배수"는 각 채널 최근 영상 조회수 중앙값 기준입니다.</div>
 </main></body></html>
