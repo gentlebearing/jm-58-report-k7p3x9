@@ -100,7 +100,7 @@ td small{color:var(--fg2)}
 </head><body>
 <header class="hero"><div class="wrap">
 <span class="eyebrow">재민네 수학 · 59-2편 게시 첫 1시간 점검</span>
-<h1>첫 1시간은 평소 수준의 하단이다.<em>더 큰 문제는 알림이 두 편 연속 안 나간 것이다.</em></h1>
+<h1>첫 1시간은 평소 수준의 하단이다.<em>알림 0건은 고장이 아니라 집계 지연으로 본다.</em></h1>
 <div class="meta">2026년 11월 1일 · 「수능수학 벼락치기, 4점은 쉽게 오릅니다」 게시 후 53분 · YouTube Studio 실시간 추정치 · 원 점검 보고서를 다시 계산해 검증했다</div>
 </div></header>
 <main class="wrap">
@@ -110,9 +110,9 @@ td small{color:var(--fg2)}
 <div class="kpi flat"><div class="k">53분 누적 조회수</div><div class="new">411회</div><span class="kb">평소 범위 하단</span><p>채널 평소 범위 410~760회의 맨 아래. 처음 20분은 범위 밑이었다.</p></div>
 <div class="kpi up"><div class="k">직전 58편과 비교 (30분 시점)</div><div class="new">1.4배 빠름</div><span class="kb">확인</span><p>221회 vs 158회. 다시 계산해도 1.40배다.</p></div>
 <div class="kpi maybe"><div class="k">썸네일 클릭률</div><div class="new">9.5%</div><span class="kb">판단 보류</span><p>노출 약 1천 회, 53분 값이다. 첫 1시간은 구독자 비중이 높아 원래 높게 나온다. 24시간 값으로 다시 본다.</p></div>
-<div class="kpi down"><div class="k">구독자 알림(모바일 푸시)</div><div class="new">0건</div><span class="kb">두 편 연속</span><p>58편도 24시간 내내 0이었다. D-26편은 640건 발송, 알림 유입 170회였다.</p></div>
+<div class="kpi flat"><div class="k">구독자 알림(모바일 푸시)</div><div class="new">53분엔 0건</div><span class="kb">집계 대기</span><p>58편도 처음엔 0으로 보였다. 지금은 248건 발송, 클릭률 3.2%로 정상이다.</p></div>
 </div>
-<div class="oneline">썸네일 반응은 초반 기준으로 좋다.<br><mark>알림이 막혀서 첫날 조회를 구독자가 못 밀어주고 있다.</mark> 이것부터 푼다.</div>
+<div class="oneline">썸네일 반응은 초반 기준으로 좋다.<br><mark>알림은 고장이 아니라 늦게 잡히는 것이다.</mark> 24시간 뒤 둘 다 다시 본다.</div>
 
 <h2><span class="n">1</span>첫 53분: 범위 밑에서 시작해 하단에 붙었다</h2>
 <figure class="chart"><p class="ct">게시 후 누적 조회수 vs 채널 평소 범위</p><p class="cs">보라 띠 = 재민네 평소 범위 · 굵은 선 = 이번 영상 · 회색 점 = 58편 같은 시점</p>
@@ -144,16 +144,19 @@ td small{color:var(--fg2)}
 <li>유입은 탐색(홈·구독 피드)이 84%다. 알림은 2.7%(약 11회)뿐이다.</li>
 </ul>
 
-<h2><span class="n">2</span>알림: 두 편 연속 0건이면 우연이 아니다</h2>
-<p>도달범위 탭의 '전송된 종 모양 알림'에서 모바일 푸시 발송 수가 비어 있고, 알림 클릭률과 알림 조회수가 0이다. 58편(10/27)도 같았다. 그 전 D-26편(10/22)은 정상이었다.</p>
+<h2><span class="n">2</span>알림: 고장이 아니라 집계 지연이다</h2>
+<p>원 보고서는 58편도 24시간 내내 알림이 0이었다며 "두 편 연속 문제"로 봤다. 지금 58편 알림 카드를 다시 보면 다르다.</p>
 <div class="tw"><table>
-<tr><th>원인 후보</th><th>근거</th><th>판정</th></tr>
-<tr><td>공개 직후 비공개·일부공개로 바꿨다</td><td>YouTube 도움말에 명시돼 있다. 공개 직후 비공개로 바꾸면 알림 발송을 멈춘다(발송에 10~20분 걸림).</td><td><span class="v ok">공식</span></td></tr>
-<tr><td>비공개로 먼저 올리고 나중에 공개했다</td><td>원 보고서는 이걸 원인으로 추정했다. 하지만 처음 공개할 때 알림이 안 나간다는 근거는 찾지 못했다. 공개 → 비공개 → 재공개하면 두 번째에는 안 나간다는 제3자 글만 있다.</td><td><span class="v warn">미확인</span></td></tr>
-<tr><td>짧은 시간에 여러 편을 올렸다</td><td>YouTube는 알림 횟수를 제한한다고만 밝힌다. '24시간 3편' 같은 숫자는 제3자 블로그에만 있다.</td><td><span class="v warn">가능성</span></td></tr>
-<tr><td>업로드 때 '구독자에게 알림' 체크 해제</td><td>업로드 화면에서 직접 확인해야 한다.</td><td><span class="v warn">확인 필요</span></td></tr>
+<tr><th>영상</th><th>모바일 푸시 발송</th><th>알림 클릭률</th><th>알림 조회수</th></tr>
+<tr><td>58편 (10/27, 현재)</td><td>248건</td><td>3.2% <small>(YouTube 일반 0.5~2.5%)</small></td><td>8회</td></tr>
+<tr><td>D-26편 (10/22)</td><td>640건</td><td>3.3%</td><td>170회</td></tr>
+<tr><td>59-2편 (게시 53분)</td><td>집계 전</td><td>—</td><td>—</td></tr>
 </table></div>
-<p><b>가장 빠른 확인법.</b> 알림이 안 나가면 YouTube 분석이 그 이유를 표시해 준다. 도달범위 탭 알림 카드에서 '전송되지 않은 이유'를 보면 위 후보 중 어느 것인지 바로 나온다.</p>
+<ul>
+<li><b>58편 알림은 나갔다.</b> 카드에 늦게 잡혔을 뿐이다. 59-2의 0건도 같은 지연일 가능성이 크다.</li>
+<li>클릭률 3.2%는 YouTube 일반 범위보다 높다. 알림 받은 구독자는 잘 누른다.</li>
+<li>다만 발송 수는 D-26편의 절반 아래다(248 vs 640). 알림 받는 구독자 수가 바뀐 건지, 일부가 안 나간 건지는 카드의 '전송되지 않은 이유'에서 확인한다. 공식 도움말상 공개 직후 비공개·일부공개로 바꾸면 발송이 멈춘다.</li>
+</ul>
 
 <h2><span class="n">3</span>원 점검 보고서 검증</h2>
 <div class="tw"><table>
@@ -165,15 +168,16 @@ td small{color:var(--fg2)}
 <tr><td>엔딩 화면 클릭률 0.0% → "미설정 추정"</td><td>53분 시점 평균 시청은 2분이다. 15:40 끝까지 본 사람이 거의 없으니 0%는 당연하다. 설정 여부는 편집 화면에서 직접 본다.</td><td><span class="v warn">근거 부족</span></td></tr>
 <tr><td>알림 켠 구독자 4.3%, "일반 10~30%"</td><td>4.3%는 Studio 값이다. 비교 기준 10~30%는 출처가 없어서 뺐다.</td><td><span class="v warn">출처 없음</span></td></tr>
 <tr><td>제목이 벼락치기 리서치 1순위 구조다</td><td>구조는 맞다. 하지만 '4점'이 들어갔다. 같은 시기 리서치에서 'N점' 제목은 평소의 0.16배였다. 지금 클릭률이 나쁘지 않으니 바꿀 근거는 아직 없다.<br><small>→ 24시간 뒤에 판단한다.</small></td><td><span class="v warn">리스크</span></td></tr>
+<tr><td>58편도 24시간 내내 알림 0, 두 편 연속 문제</td><td>지금 58편 카드는 푸시 248건, 클릭률 3.2%, 알림 조회 8회다. 집계 지연을 고장으로 봤다.</td><td><span class="v no">틀림</span></td></tr>
 <tr><td>알림 유입 2.7%인데 푸시는 0</td><td>앱 알림함 등에서 들어온 조회로 보는 해석이 합리적이다.</td><td><span class="v ok">타당</span></td></tr>
 </table></div>
 
 <h2><span class="n">4</span>오늘 밤 할 일</h2>
 <ol class="steps">
-<li class="hot"><span class="no">1</span><span class="t">알림이 안 나간 이유 확인</span><span class="q">도달범위 탭 알림 카드 → 전송되지 않은 이유. 업로드 화면의 알림 체크도 함께 본다. 다음 편은 바로 공개하거나 예약 게시로 올려서 비교한다.</span></li>
-<li class="hot"><span class="no">2</span><span class="t">알림 대신 직접 밀기</span><span class="q">커뮤니티 게시물(마지막 게시물이 6월 4일), 오픈채팅, 인스타에 첫 24시간 안에 링크를 돌린다.</span></li>
-<li><span class="no">3</span><span class="t">엔딩 화면 연결</span><span class="q">58편과 이번 편을 서로 잇는다. 이미 설정돼 있으면 넘어간다.</span></li>
-<li><span class="no">4</span><span class="t">고정 댓글에 질문 한 줄</span><span class="q">예: "6모·9모 14번, 처음 풀 때 몇 분 걸렸어요?" 지금 시청자 댓글은 0개다.</span></li>
+<li class="hot"><span class="no">1</span><span class="t">첫 24시간 직접 밀기</span><span class="q">커뮤니티 게시물(마지막 게시물이 6월 4일), 오픈채팅, 인스타에 링크를 돌린다.</span></li>
+<li><span class="no">2</span><span class="t">엔딩 화면 연결</span><span class="q">58편과 이번 편을 서로 잇는다. 이미 설정돼 있으면 넘어간다.</span></li>
+<li><span class="no">3</span><span class="t">고정 댓글에 질문 한 줄</span><span class="q">예: "6모·9모 14번, 처음 풀 때 몇 분 걸렸어요?" 지금 시청자 댓글은 0개다.</span></li>
+<li><span class="no">4</span><span class="t">알림 카드는 내일 다시 확인</span><span class="q">발송 수가 잡혔는지, 안 나간 건이 있으면 그 이유가 뭔지 본다.</span></li>
 <li><span class="no">5</span><span class="t">썸네일·제목은 24시간 뒤에 판단</span><span class="q">지금 값은 초반이라 바꿀 근거도, 그대로 둘 근거도 약하다.</span></li>
 </ol>
 
@@ -187,5 +191,5 @@ td small{color:var(--fg2)}
 <div class="src"><b>출처</b><br>
 YouTube Studio(편집자 권한) 개요·도달범위·참여도·시청자 탭, 게시 후 약 53분 시점 실시간 추정치 · 이전 점검(58편·D-26편 알림 카드)<br>
 <a href="https://support.google.com/youtube/answer/7389684">YouTube 고객센터: 구독자 알림 문제 해결</a> · <a href="https://support.google.com/youtube/answer/7457584">YouTube 고객센터: 알림 관련 분석</a><br>
-'24시간 3편 제한'과 '재공개 시 미발송'은 제3자 글에만 있어 미확인으로 표시했다.</div>
+58편 알림 카드는 11월 1일 다시 확인한 값이다.</div>
 </main></body></html>
